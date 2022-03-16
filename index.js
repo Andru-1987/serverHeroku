@@ -3,12 +3,12 @@ const express=require('express');
 const fs=require('fs');
 
 const app=express();
-const port=5000;
+const port=process.env.PORT||5000;
 const host='localhost';
 const uniCode='UTF-8';
 
 
-const dbStore='./store/todos.json';
+const dbStore=require('./store/todos.json');
 
 
 
