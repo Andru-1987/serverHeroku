@@ -3,7 +3,7 @@ const express=require('express');
 const fs=require('fs');
 
 const app=express();
-const port=process.env.PORT||5000;
+const port=process.env.PORT || 5000;
 const host='localhost';
 const uniCode='UTF-8';
 
@@ -129,6 +129,6 @@ app.put('/todos/:id/update', (request,response)=>{
 
 
 
-app.listen(5000,()=>{
+app.listen(port,()=>{
 	console.log(`Running on http://${host}:${port}`);
 });
