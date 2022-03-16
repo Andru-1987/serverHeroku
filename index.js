@@ -19,6 +19,11 @@ app.use(express.urlencoded({extended:true}));
 // handling requests
 
 
+
+app.get('/', (request,response)=>{
+	response.send('Anderson API');
+})
+
 app.post('/todo', (request,response)=>{
 	if(!request.body.name){
 		return response.status(400).send(`Hey! The to do's name is empty`);
