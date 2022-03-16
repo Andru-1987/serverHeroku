@@ -8,7 +8,7 @@ const host='localhost';
 const uniCode='UTF-8';
 
 
-const dbStore=require('./store/todos.json');
+const dbStore='./store/todos.json';
 
 
 
@@ -23,6 +23,7 @@ app.use(express.urlencoded({extended:true}));
 app.get('/', (request,response)=>{
 	response.send('Anderson API');
 })
+
 
 app.post('/todo', (request,response)=>{
 	if(!request.body.name){
