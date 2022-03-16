@@ -10,7 +10,7 @@
   "keywords": [],
   "author": "anderson oca <andru.ocatorres@gmail.com>",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
     "express": "^4.17.3"
   },
   "engines":{
